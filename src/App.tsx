@@ -15,7 +15,7 @@ function App() {
   const [form, setForm] = useState({ name: "", email: "", age: "", dob: "" });
   const [editingId, setEditingId] = useState<number | null>(null);
 
-  const API_BASE = "/api/v1/students/";
+  const API_BASE = "https://buncrudstudents.onrender.com/api/v1/students/";
 
   // Fetch all students
   const fetchStudents = async () => {
