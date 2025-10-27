@@ -15,7 +15,7 @@ export default defineConfig({
     server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://buncrudstudents.onrender.com',
         changeOrigin: true,
         // optional if your backend is not at same path
         rewrite: (path) => path.replace(/^\/api/, ''),
