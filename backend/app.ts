@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://bun-crud-students-6xzk4943x-mrheadlessboys-projects.vercel.app/" }));
 
 
 app.use('/v1/students', studentRoutes);
