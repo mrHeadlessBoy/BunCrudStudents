@@ -12,7 +12,7 @@ export default defineConfig({
       },
     }),tailwindcss()
   ],
-    server: {
+/*     server: {
     proxy: {
       '/api': {
         target: 'https://buncrudstudents.onrender.com',
@@ -21,5 +21,5 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
-  },
+  }, */
 })
