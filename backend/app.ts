@@ -6,7 +6,12 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({ origin: "https://bun-crud-students.vercel.app/" }));
+app.use(cors({
+  origin: [
+    "https://bun-crud-students.vercel.app", // ✅ no trailing slash
+    "http://localhost:5173"                  // for local dev
+  ]
+}));
 
 app.use('/v1/students', studentRoutes);
 
